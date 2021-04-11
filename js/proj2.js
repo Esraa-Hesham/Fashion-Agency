@@ -144,10 +144,20 @@ ourGallery.forEach(img => {
         popbox.appendChild(thepopupImage);
         //append the popupbox to body
         document.body.appendChild(popbox);
-
+        let overlayDiv = document.querySelector(".pop-overlay");
+        if(overlayDiv){
+            overlayDiv.addEventListener("click", (e) => {
+                console.log(e)
+                document.querySelector('.pop-overlay').remove();
+                document.querySelector('.popup-box').remove();
+            
+            });
+        }
     });
 
 });
+
+
 //select all buallets
 const allbullets = document.querySelectorAll(".nav-bullets .bullets");
 
