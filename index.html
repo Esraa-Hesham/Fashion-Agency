@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>project1</title>
+    <title>Fashion Agency</title>
     <link rel="stylesheet" href="css/all.min.css" type="text/css">
     <link rel="stylesheet" href="css/proj1.css" type="text/css">
     <link rel="stylesheet" href="css/normlization.css" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
 </head>
 
@@ -27,8 +27,6 @@
                     <li data-color="#0f6b54"></li>
                     <li data-color="#32e2c5"></li>
                     <li data-color="#140c8d"></li>
-
-
                 </ul>
             </div>
             <div class="option-box2">
@@ -85,17 +83,19 @@
     <!-- end landing page-->
     <!-- start about us-->
     <div class="container">
-        <div class="about-us">
-            <div class="info-box">
+
+        <div class="about-us row ">
+            <div class="info-box col-md-8 col-sm-12">
                 <h2>About Us</h2>
                 <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or
                     web designs. The passage is attributed to an unknown typesetter in the 15th century who is thought
                     to have scrambled parts of Cicero's De Finibus Bonorum et Malorum for use in a type specimen book.
                 </p>
             </div>
-            <div class="image-box">
+            <div class="image-box col-md-4 col-sm-12">
                 <img src="./images/about-us.png" id="about-us-img" alt="about-us">
             </div>
+
         </div>
     </div>
     <!-- end about us-->
@@ -277,31 +277,40 @@
     <div class="testimonials">
         <div class="container">
             <h2>Testimonials</h2>
-            <div class="ts-box">
-                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
-                <div class="person-info">
-                    <img alt="person" src="./images/p1.jpg">
-                    <h4>Esraa Hesham</h4>
-                    <p>lipsum as it is sometimes known</p>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="ts-box mx-0">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
+                        <div class="person-info">
+                            <img alt="person" src="./images/p1.jpg">
+                            <h4>Esraa Hesham</h4>
+                            <p>lipsum as it is sometimes known</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ts-box">
-                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
-                <div class="person-info">
-                    <img alt="person" src="./images/p2.jpg">
-                    <h4>Esraa Hesham</h4>
-                    <p>lipsum as it is sometimes known</p>
+                <div class="col-md-4 col-sm-12">
+                    <div class="ts-box mx-0">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
+                        <div class="person-info">
+                            <img alt="person" src="./images/p2.jpg">
+                            <h4>Esraa Hesham</h4>
+                            <p>lipsum as it is sometimes known</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="ts-box">
-                <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
-                <div class="person-info">
-                    <img alt="person" src="./images/p3.jpg">
-                    <h4>Esraa Hesham</h4>
-                    <p>lipsum as it is sometimes known</p>
+                <div class="col-md-4 col-sm-12">
+                    <div class="ts-box mx-0">
+                        <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.</p>
+                        <div class="person-info">
+                            <img alt="person" src="./images/p3.jpg">
+                            <h4>Esraa Hesham</h4>
+                            <p>lipsum as it is sometimes known</p>
+                        </div>
+                    </div>
                 </div>
+                <div class="clearfix"></div>
             </div>
-            <div class="clearfix"></div>
+
         </div>
 
     </div>
@@ -335,19 +344,20 @@
         <div class="container">
             <h2>Contact Us</h2>
             <form class="form" action="">
-                <div class="left">
-                    <input type="text" placeholder="Your Name" name="username">
-                    <input type="text" placeholder="Your Phone" name="phone">
-                    <input type="email" placeholder="Your Email" name="email">
-                    <input type="text" placeholder="Your Subject" name="Subject">
+                <div class="row">
+                    <div class=" col-md-6 col-xs-12 ">
+                        <input type="text" placeholder="Your Name" name="username">
+                        <input type="text" placeholder="Your Phone" name="phone">
+                        <input type="email" placeholder="Your Email" name="email">
+                        <input type="text" placeholder="Your Subject" name="Subject">
 
-                </div>
-                <div class="right">
-                    <textarea name="massage" placeholder="Your Massage"></textarea>
-                    <input type="submit" value="Send">
+                    </div>
+                    <div class=" col-md-6 col-xs-12 ">
+                        <textarea name="massage" placeholder="Your Massage"></textarea>
+                        <input type="submit" value="Send">
 
+                    </div>
                 </div>
-            </form>
 
         </div>
     </div>
@@ -358,15 +368,22 @@
     <!--End Footer Section-->
 
 
-
-
-
-
-
-
-
     <script src="./js/proj2.js"></script>
-
+    <script src="./js/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="./js/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="./js/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="./js/js/bootstrap.min.js"
+        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
