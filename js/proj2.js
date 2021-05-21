@@ -66,12 +66,13 @@ function myFunction() {
     console.log(sticky, windowScrollTop);
     if (windowScrollTop > sticky) {
         header.classList.add("sticky");
+        document.querySelector(".setting-box").style.top = sticky+'px';
         console.log(sticky);
     }
     else {
         header.classList.remove("sticky");
+        document.querySelector(".setting-box").style.top = '0px';
     }
-    console.log("sticky");
 }
 
 //select landing page
@@ -246,6 +247,9 @@ toggleBtn.onclick = function (e) {
     //toggle class open  on links
 
     tlinks.classList.toggle("open");
+    // document.querySelector(".logo").style.marginLeft = "150px";
+    document.getElementById("logo").style.marginLeft = "150px";
+
 
 };
 //click anywahere outside button to closs it
